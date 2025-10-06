@@ -34,7 +34,7 @@ class Meme {
       spoiler: json['spoiler'],
       author: json['author'],
       ups: json['ups'],
-      preview: json['preview'],
+      preview: List<String>.from(json['preview']),
     );
   }
 
@@ -48,6 +48,7 @@ class Meme {
       'spoiler': spoiler,
       'author': author,
       'ups': ups,
+      'preview':preview
     };
   }
 }
