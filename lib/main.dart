@@ -1,20 +1,22 @@
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+void main(){
+  runApp(MemeApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  
+class MemeApp extends StatelessWidget {
+  const MemeApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primaryColor: Colors.deepPurple,
+
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
